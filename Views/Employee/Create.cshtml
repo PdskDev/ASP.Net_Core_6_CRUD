@@ -1,0 +1,35 @@
+﻿@model Employee
+
+<div class="container shadow p-5">
+    <div class="row pb-2">
+        <h2>Add Employee</h2>
+    </div>
+
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Name">Name</label>
+                <input type="text" class="form-control mb-3" asp-for="Name" placeholder="Enter Name"/>
+                <span asp-validation-for="Name" class="alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Designation">Designation</label>
+                <input type="text" class="form-control mb-3" asp-for="Designation" placeholder="Enter Designation"/>
+                <span asp-validation-for="Designation" class="alert-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Address">Adresse</label>
+                <input type="text" class="form-control mb-3" asp-for="Address" placeholder="Enter Address"/>
+                <span asp-validation-for="Address" class="alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="RecordCreationOn">Created On</label>
+                <input type="datetime-local" asp-for="RecordCreationOn" placeholder="Enter Address"/>
+                <span asp-validation-for="RecordCreationOn" class="alert-danger"></span>
+            </div>
+        </div>
+    </form>
+</div>
