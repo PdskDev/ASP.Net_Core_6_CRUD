@@ -32,7 +32,7 @@ namespace EmployeeCRUD.Controllers
                 _context.Employees.Add(empobj);
                 _context.SaveChanges();
 
-                TempData["ResultatOk"] = "Record added successfully!";
+                TempData["ResultOk"] = "Record added successfully!";
 
                 return RedirectToAction("Index");
             }

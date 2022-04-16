@@ -6,7 +6,7 @@
 
     @if(TempData["ResultOk"]!=null)
     {
-        <h1 class="alert-success">@TempData["ResultOk"]</h1>
+        <h3 class="alert-success">@TempData["ResultOk"]</h3>
     }
 
     <div class="container shadow p-5">
@@ -35,10 +35,10 @@
                         <td width="20%">@item.RecordCreationOn</td>
                         <td>
                             <div class="w-60 btn-group" role="group">
-                                <a asp-controller="Empoyee" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">
+                                <a asp-controller="Employee" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">
                                     <i class="bi bi-pencil-square"></i>Edit&nbsp;
                                 </a>
-                                <a asp-controller="Empoyee" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                                <a asp-controller="Employee" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
                                     <i class="bi bi-trash-fill"></i>Delete
                                 </a>
                             </div>

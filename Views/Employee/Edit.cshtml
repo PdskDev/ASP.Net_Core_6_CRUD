@@ -2,10 +2,10 @@
 
 <div class="container shadow p-5">
     <div class="row pb-2">
-        <h3>Add Employee</h3>
+        <h3>Edit Employee</h3>
     </div>
 
-    <form method="post">
+    <form method="post" asp-action="Edit">
         <div asp-validation-summary="All"></div>
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -31,7 +31,7 @@
                 <span asp-validation-for="RecordCreationOn" class="alert-danger"></span>
             </div>
         </div>
-        <button type="submit" class="btn btn-lg btn-primary p-2"><i class="bi bi-file-plus-fill"></i>Add</button>
+        <button type="submit" class="btn btn-lg btn-primary p-2"><i class="bi bi-file-plus-fill"></i>Update</button>
         <a asp-controller="Employee" asp-action="Index" class="btn btn-lg btn-warning p-2">Back to list</a>
     </form>
 </div>
